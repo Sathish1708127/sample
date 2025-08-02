@@ -1,3 +1,6 @@
+touch filename  /*creates a new file*/
+mkdir directory_name  /*creates a new directory*/
+ls -lart /*shows all file along with hidden files*/
 git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
 git init
@@ -9,4 +12,15 @@ git checkout -f
 git log
 git log -p -1,2,3
 git diff
-git diff --staged /*compare with last commit*/
+git diff --staged            /*compare with last commit*/
+git commit -a -m "commit all changes"
+git rm filename  /*removes a file*/
+git rm -r directory_name  /*removes a directory*/
+git rm --cached filename  /*removes a file from commit but it will keep the file instead of deleting */
+git status -s  
+touch .ignore_filename /*ignores any kind of file name added in this file*/
+git branch /*shows all branches*/
+git branch branch_name /*creates a new branch*/
+git checkout branch_name /*switches to a branch*/
+git merge branch_name /*merges branch_name to current branch*/
+git checkout -b branch_name /*creates and switches to a new branch*/
